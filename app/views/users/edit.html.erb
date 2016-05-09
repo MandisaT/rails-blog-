@@ -1,0 +1,44 @@
+
+<h3>Edit</h3>
+
+<center><div class="transbox2">
+<div class="font">
+<%= form_for @user do |f| %>
+	<%=f.label "first name" %>
+	<br>
+	<br>
+	<%=f.text_field :fname %>
+	<br>
+	<br>
+	<%=f.label "last name" %>
+	<br>
+	<br>
+	<%=f.text_field :lname %>
+	<br>
+	<br>
+	<%=f.label "username" %>
+	<br>
+	<br>
+	<%=f.text_field :username%>
+	<br>
+	<br>
+	<%=f.label "email" %>
+	<br>
+	<br>
+	<%=f.text_field :email%>
+	<br>
+	<br>
+	<%=f.label "password" %>
+	<br>
+	<br>
+	<%=f.password_field :password %>
+	<br>
+	<br>
+	<!-- 
+	when you hit the submit buttone your sending params  -->
+	<%=f.submit%>
+	<br>
+	<%= link_to "Delete", user_path, method: :delete %>
+<%end%>
+</div>
+</div>

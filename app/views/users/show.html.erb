@@ -1,0 +1,19 @@
+<h1>Its in the details</h1>
+<div class="transbox">
+<div class="font">
+	<%= @user.username %>
+	<br>
+	<%= @user.fname %>
+	<br>
+	<%= @user.lname %>
+	<br>
+	<%= @user.email %>
+	<br>
+	<%= link_to('Log out', logout_path, method: :delete) %>
+	</br>
+	<%= link_to 'Edit', edit_user_path(@user) %>
+</div>
+</div>
+
+
+

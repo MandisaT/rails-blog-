@@ -1,0 +1,18 @@
+
+<h1>Welcome</h1>
+
+<div class="transbox">
+	<div class="font">
+<%= form_tag login_path do %>
+	<%=label_tag :username %>
+	<%=text_field_tag :username%>
+	<br>
+	<%=label_tag :password %>
+	<%=password_field_tag :password %>
+	<br>
+	<%=submit_tag  :login%>
+	<br>
+
+<%end%>
+</div>
+</div>

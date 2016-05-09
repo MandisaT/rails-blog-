@@ -1,0 +1,17 @@
+
+
+<h2>What are your thoughts ?</h2>
+
+<div class="transbox">
+	<div class="font">
+<%= form_for @post do |f| %>
+	<%=f.label "Title" %>
+	<%=f.text_field :title %>
+	<br>
+	<%=f.label "Body" %>
+	<%=f.text_field :body %>
+	<br>
+	<%=f.submit :create%>
+	<%end%>
+</div>
+</div>

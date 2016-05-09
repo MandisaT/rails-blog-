@@ -1,0 +1,16 @@
+
+<h2>Thoughts</h2>
+
+<div class="transbox2">
+	<div class="font">
+<% @posts.each do |post| %>
+<h2>Crew number:<%= post.user_id %></h2>
+<%if post.user%>
+<h2>Crew Member:<%= post.user.username %></h2>
+<%end%>
+<h3>Title:<%=post.title %></h3>
+<h4>Body:<%=post.body %></h4>
+
+<% end %>
+</div>
+</div>

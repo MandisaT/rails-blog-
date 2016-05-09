@@ -1,0 +1,30 @@
+
+nav{
+	text-align: center;
+}
+ul {
+
+	border: 2px solid gray;
+    list-style-type:none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: black;
+}
+
+li {
+  display: inline-block;
+   text-align:center; 
+}
+
+li a {
+	color: white;
+    display: block;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    color: #9B5F1D;
+}

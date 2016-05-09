@@ -1,0 +1,40 @@
+div.transbox {
+  margin: 50px;
+  background-color: #ffffff;
+  border: 1px solid black;
+  opacity: 0.6;
+  text-align:center;
+    width: 40%;
+    margin-left: 30%;
+  filter: alpha(opacity=60); /* For IE8 and earlier */
+}
+
+div.transbox p {
+  margin: 5%;
+  font-weight: bold;
+  color: #000000;
+}
+
+div.transbox2 {
+  margin: 70px;
+  background-color: #ffffff;
+  border: 1px solid black;
+  opacity: 0.6;
+  filter: alpha(opacity=60); /* For IE8 and earlier */
+  width: 50%;
+  margin-left: 25%;
+}
+  p, h1, h2, h3, h4{
+  	text-align: center;
+  }
+div.font{
+	 color:black;
+}
+
+body {
+
+	background-color: black;
+	 font-family: 'Metrophobic', Arial, serif;
+	 font-weight: 400; 
+	 color:white;
+	}

@@ -1,0 +1,19 @@
+<h2>Edit</h2>
+<%= form_for @post do |f| %>
+
+<div class="transbox2">
+	<div class="font">
+<%= form_for @post do |p| %>
+	<%=f.label "Title" %>
+	<%=f.text_field :title %>
+	<br>
+	<%=f.label "Body" %>
+	<%=f.text_field :body %>
+	<br>
+	<%=f.submit :create%>
+	<%end%>
+	<%= button_to "Delete", post_path(@post), method: :delete %>
+
+<%end%>
+</div>
+</div>
