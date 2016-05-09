@@ -21,7 +21,6 @@ def new
 end
 
 def create  
-  puts parmas.inspect
 	@user = User.new(user_parmas)
 	# creating a new record in the system 
 	if @user.save
@@ -41,14 +40,16 @@ end
 
 def update
  @user = User.find(params[:id])
- @user.update(params) 
+ @user.update(user_parmas) 
  redirect_to  user_path @user 
 end 
-end 
+
 private 
 
 def user_parmas
 params.require(:user).permit(:fname, :lname, :email, :password , :username)
+
+end 
 
 end 
 

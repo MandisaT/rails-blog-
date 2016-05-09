@@ -10,10 +10,9 @@
 	<%=f.label "Body" %>
 	<%=f.text_field :body %>
 	<br>
-	<%=f.submit :create%>
+	<%=f.submit %>
 	<%end%>
-	<%= button_to "Delete", post_path(@post), method: :delete %>
-
+	<%= link_to "Delete", post_path, method: :delete %>
 <%end%>
 </div>
 </div>
