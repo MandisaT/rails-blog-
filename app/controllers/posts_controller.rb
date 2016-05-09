@@ -9,7 +9,7 @@ class PostsController < ApplicationController
   end
 
   def index
-    @posts =Post.all
+    @posts =Post.all.order('created_at DESC')
     # this is a collection of post should be saved as pluralized 
     
   end
@@ -51,7 +51,7 @@ class PostsController < ApplicationController
 
   private
   def post_params
-    params.require(:post).permit(:title ,:body,:user_id)
+    params.require(:post).permit(:title ,:body,:user_id).merge(user: current_user)
   end
 end 
  

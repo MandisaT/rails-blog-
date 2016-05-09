@@ -2,6 +2,10 @@ class ApplicationController < ActionController::Base
   # Prevent CSRF attacks by raising an exception.
   # For APIs, you may want to use :null_session instead.
   helper_method :current_user
+  
+  #ternary operator
+  # session[:user_id] ? User.find(session[:user_id]) : nil
+
   def  current_user
 	if session[:user_id]
 		current_user =User.find(session[:user_id])

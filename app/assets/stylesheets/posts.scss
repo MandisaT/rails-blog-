@@ -19,8 +19,7 @@ div.transbox2 {
   margin: 70px;
   background-color: #ffffff;
   border: 1px solid black;
-  opacity: 0.6;
-  filter: alpha(opacity=60); /* For IE8 and earlier */
+  background-color: rgba(255,255,255,0.5);
   width: 50%;
   margin-left: 25%;
 }
